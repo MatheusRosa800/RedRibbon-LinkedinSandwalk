@@ -1,1 +1,1 @@
-# RedRibbon-WebScrapper
+# RedRibbon-LinkedinScrapper
