@@ -16,10 +16,10 @@ driver.get(url)
 sleep(2)
 
 user = driver.find_element(By.NAME,'session_key')
-user.send_keys('matrosa.colombo@gmail.com')
+user.send_keys('seu_usuario')
 
 password = driver.find_element(By.NAME,'session_password')
-password.send_keys('MatheusRosaColombo10@')
+password.send_keys('sua_senha')
 
 login = driver.find_element(By.TAG_NAME, "button")
 login.click()
