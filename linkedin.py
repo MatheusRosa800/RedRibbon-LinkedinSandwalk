@@ -31,7 +31,7 @@ sleep(2)
 search.send_keys(empresa)
 sleep(2)
 search.send_keys(Keys.ENTER)
-sleep(2)
+sleep(3)
 
 filtro = driver.find_element(By.XPATH, '//button[text()="Pessoas"]')
 filtro.click()
