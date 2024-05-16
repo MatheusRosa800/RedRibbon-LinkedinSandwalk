@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
 
-empresa = input("Por favor insira a empresa:")
+empresa = "fiap"
 
 service = Service()
 options = webdriver.ChromeOptions()
@@ -16,10 +16,10 @@ driver.get(url)
 sleep(2)
 
 user = driver.find_element(By.NAME,'session_key')
-user.send_keys('seu_usuario')
+user.send_keys('user')
 
 password = driver.find_element(By.NAME,'session_password')
-password.send_keys('sua_senha')
+password.send_keys('pass')
 
 login = driver.find_element(By.TAG_NAME, "button")
 login.click()
@@ -31,14 +31,23 @@ sleep(2)
 search.send_keys(empresa)
 sleep(2)
 search.send_keys(Keys.ENTER)
-sleep(3)
+sleep(4)
 
 filtro = driver.find_element(By.XPATH, '//button[text()="Pessoas"]')
 filtro.click()
 sleep(2)
 
 people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
-
 people[0].click()
+sleep(2)
+driver.back()
 
-    
+people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
+people[1].click()
+sleep(2)
+driver.back()
+
+people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
+people[2].click()
+sleep(2)
+driver.back()
