@@ -2,39 +2,46 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
+from bs4 import BeautifulSoup
 from time import sleep
 import pandas as pd
 
-def write_profile_to_file(nome, cargo, local):
-    with open("profiles.txt", "a", encoding='utf-8') as file:
-        file.write(f"Name: {nome}\nJob Title: {cargo}\nLocation: {local}\n\n")
+def interacao(index):
+    people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
+    people[index].click()
+    sleep(2)
+    print("=" * 40)
+    coletainfo()
+    print("=" * 40)
+    sleep(2)
+    driver.back()
 
+pessoas = []
+    
 def coletainfo():
 
     # NOME 
     element = driver.find_element(By.TAG_NAME, "h1")
     nome = element.text
-    print(nome)
 
     # # CARGO
     element = driver.find_element(By.XPATH, "//*[@id='profile-content']/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[1]/div[2]")
     cargo = element.text
-    print(cargo)
 
     # # LOCALIZAÇÃO
     element = driver.find_element(By.XPATH, "//*[@id='profile-content']/div/div[2]/div/div/main/section[1]/div[2]/div[2]/div[2]/span[1]")
     local = element.text
-    print(local)
 
-    # EXPERIENCIA 
+    pessoa = [nome, cargo, local] 
 
+    # EXPERIENCE
 
     # FORM ACADEMICA
 
-    
-    write_profile_to_file(nome, cargo, local)
+    pessoas.append(pessoa)  
+    print(pessoas)
 
-empresa = "fiap"
+empresa = "matheus rosa colombo"
 
 service = Service()
 options = webdriver.ChromeOptions()
@@ -46,10 +53,10 @@ driver.get(url)
 sleep(2)
 
 user = driver.find_element(By.NAME,'session_key')
-user.send_keys('user')
+user.send_keys('matrosa.colombo@gmail.com')
 
 password = driver.find_element(By.NAME,'session_password')
-password.send_keys('pass')
+password.send_keys('MatheusRosaColombo10@')
 
 login = driver.find_element(By.TAG_NAME, "button")
 login.click()
@@ -67,34 +74,9 @@ filtro = driver.find_element(By.XPATH, '//button[text()="Pessoas"]')
 filtro.click()
 sleep(2)
 
-people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
-people[0].click()
-sleep(2)
-print("=" * 40)
-coletainfo()
-print("=" * 40)
-sleep(2)
-driver.back()
+interacao(0)
+interacao(1)
+interacao(2)
 
-people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
-people[1].click()
-sleep(2)
-print("=" * 40)
-coletainfo()
-print("=" * 40)
-sleep(2)
-driver.back()
-
-people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
-people[2].click()
-sleep(2)
-print("=" * 40)
-coletainfo()
-print("=" * 40)
-sleep(2)
-driver.back()
-
-people = driver.find_elements(By.CLASS_NAME, "reusable-search__result-container")
-people[2].click()
-sleep(2)
-driver.back()
+df = pd.DataFrame(pessoas, columns=['Nome', 'Cargo', 'Local'])
+print(df)
