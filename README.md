@@ -16,5 +16,5 @@ O desafio consiste criar um programa capaz de coletar informações de pessoas r
 ## Selenium
 Utilizando a biblioteca Selenium, nos possibilita realizar clicks no browser sem utilizar o mouse ou o teclado
 
-### Pandas
+## Pandas
 Tambem utilizamos o panda para criar um dataframe com todas as informações das pessoas em uma tabela.
