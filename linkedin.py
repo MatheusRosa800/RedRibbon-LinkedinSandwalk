@@ -41,7 +41,7 @@ def coletainfo():
     pessoas.append(pessoa)  
     print(pessoas)
 
-empresa = "matheus rosa colombo"
+empresa = "fiap"
 
 service = Service()
 options = webdriver.ChromeOptions()
@@ -53,10 +53,10 @@ driver.get(url)
 sleep(2)
 
 user = driver.find_element(By.NAME,'session_key')
-user.send_keys('matrosa.colombo@gmail.com')
+user.send_keys('linkedinteste50@gmail.com')
 
 password = driver.find_element(By.NAME,'session_password')
-password.send_keys('MatheusRosaColombo10@')
+password.send_keys('(QbAE&*6j7#U!@AsnR%K(9mZEWFvTz=[Gfj')
 
 login = driver.find_element(By.TAG_NAME, "button")
 login.click()
