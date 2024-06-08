@@ -1,4 +1,4 @@
-# Linkedin Fremen SandWalk
+# Linkedin SandWalk
 
 ## Introdução
 Atividade realizada com o intuito de colocar em prática todo o conhecimento de Python e a lib Selenium, ministrada pelo [Professor Samuel Almeida](https://www.linkedin.com/in/sasamuel/).
