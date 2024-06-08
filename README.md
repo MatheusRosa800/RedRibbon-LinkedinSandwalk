@@ -4,11 +4,11 @@
 Atividade realizada com o intuito de colocar em prática todo o conhecimento de Python e a lib Selenium, ministrada pelo [Professor Samuel Almeida](https://www.linkedin.com/in/sasamuel/).
 
 ## Participantes
-- Caio Vinicius RM99747
-- Henrique koji RM98476
-- Matheus Rosa RM98635
-- Pedro Augusto RM97828
-- Felipe Madeira RM99228
+- Caio Vinicius (RM99747)
+- Henrique koji (RM98476)
+- Matheus Rosa (RM98635)
+- Pedro Augusto (RM97828)
+- Felipe Madeira (RM99228)
 
 ## Desafio
 O desafio consiste criar um programa capaz de coletar informações de pessoas relacionadas a uma empresa alvo apartir do linkedin. Pesquisando a empresa e acessando o filtro de pessoas, e coletar informações como Nome, Cargo, Experiencias, etc.
