@@ -22,8 +22,9 @@ Tambem utilizamos o panda para criar um dataframe com todas as informações das
 # Observações
 No código, pedimos que coloque seu login padrão da plataforma para melhor desempenho. 
 Caso queira testar com o Usuario Limitado:
-Usuário: scythecntrl@gmail.com 
-Senha: Redribbon123@
+
+- Usuário: scythecntrl@gmail.com 
+- Senha: Redribbon123@
 
 # Versão Browser
 
