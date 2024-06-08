@@ -1,4 +1,4 @@
-# FIAP - Offensive Security - Red Ribbon
+## LINKEDIN FREMEN ARRAKIS
 
 ## Introdução
 Atividade realizada com o intuito de colocar em prática todo o conhecimento de Python e a lib Selenium, ministrada pelo [Professor Samuel Almeida](https://www.linkedin.com/in/sasamuel/).
@@ -18,3 +18,4 @@ Utilizando a biblioteca Selenium, nos possibilita realizar clicks no browser sem
 
 ## Pandas
 Tambem utilizamos o panda para criar um dataframe com todas as informações das pessoas em uma tabela.
+
