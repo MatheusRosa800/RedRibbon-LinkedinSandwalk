@@ -34,9 +34,10 @@ Caso queira testar com o Usuario Limitado:
 - PANDAS - https://pypi.org/project/pandas/
   
 ## Browser Utilizado
+Chrome 
 
 ## Versão
-Chrome Versão 125.0.6422.142 (Versão oficial) 64 bits
+125.0.6422.142 (Versão oficial) 64 bits
 
 ## Intalação 
 https://chromeenterprise.google/intl/pt_br/browser/download/?utm_source=adwords&utm_medium=cpc&utm_campaign=2024-H1-chromebrowser-paidmed-paiddisplay-other-chromebrowserent&utm_term=downloadnow-chrome-browser-enterprise-download&utm_content=GCHF&brand=GCHF&gad_source=1&gclid=CjwKCAjw34qzBhBmEiwAOUQcF9_mnJaOfDkAW110X5mt7zXkeyiYkaeadBBKcTXiTd1N1pOFJYJmiRoCk_EQAvD_BwE&gclsrc=aw.ds#windows-tab
