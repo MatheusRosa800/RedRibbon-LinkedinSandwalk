@@ -1,4 +1,4 @@
-# LINKEDIN FREMEN ARRAKIS
+# Linkedin Fremen SandWalk
 
 ## Introdução
 Atividade realizada com o intuito de colocar em prática todo o conhecimento de Python e a lib Selenium, ministrada pelo [Professor Samuel Almeida](https://www.linkedin.com/in/sasamuel/).
@@ -18,4 +18,10 @@ Utilizando a biblioteca Selenium, nos possibilita realizar clicks no browser sem
 
 ## Pandas
 Tambem utilizamos o panda para criar um dataframe com todas as informações das pessoas em uma tabela.
+
+# Observações
+No código, pedimos que coloque seu login padrão da plataforma para melhor desempenho. 
+Caso queira testar com o Usuario Limitado:
+Usuário: scythecntrl@gmail.com 
+Senha: Redribbon123@
 
