@@ -25,3 +25,6 @@ Caso queira testar com o Usuario Limitado:
 Usuário: scythecntrl@gmail.com 
 Senha: Redribbon123@
 
+# Versão Browser
+
+Chrome Versão 125.0.6422.142 (Versão oficial) 64 bits
